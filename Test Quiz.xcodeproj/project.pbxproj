@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9730289E2694FF5E00617C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730289D2694FF5E00617C68 /* AppDelegate.swift */; };
 		973028A02694FF5E00617C68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730289F2694FF5E00617C68 /* SceneDelegate.swift */; };
-		973028A22694FF5E00617C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973028A12694FF5E00617C68 /* ViewController.swift */; };
+		973028A22694FF5E00617C68 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973028A12694FF5E00617C68 /* IntroViewController.swift */; };
 		973028A52694FF5E00617C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973028A32694FF5E00617C68 /* Main.storyboard */; };
 		973028A72694FF6000617C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973028A62694FF6000617C68 /* Assets.xcassets */; };
 		973028AA2694FF6000617C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973028A82694FF6000617C68 /* LaunchScreen.storyboard */; };
@@ -17,13 +17,15 @@
 		973028C126950C7200617C68 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973028C026950C7200617C68 /* ResponseType.swift */; };
 		973028C526950CF800617C68 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973028C426950CF800617C68 /* Answer.swift */; };
 		973028C826950D7100617C68 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973028C726950D7100617C68 /* AnimalType.swift */; };
+		976138F22696568B00AC8376 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976138F12696568B00AC8376 /* QuestionViewController.swift */; };
+		976138F5269656AA00AC8376 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976138F4269656AA00AC8376 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9730289A2694FF5E00617C68 /* Test Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9730289D2694FF5E00617C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9730289F2694FF5E00617C68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		973028A12694FF5E00617C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		973028A12694FF5E00617C68 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		973028A42694FF5E00617C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		973028A62694FF6000617C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		973028A92694FF6000617C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		973028C026950C7200617C68 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		973028C426950CF800617C68 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		973028C726950D7100617C68 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		976138F12696568B00AC8376 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		976138F4269656AA00AC8376 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,9 @@
 		973028BC26950AF400617C68 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				973028A12694FF5E00617C68 /* ViewController.swift */,
+				973028A12694FF5E00617C68 /* IntroViewController.swift */,
+				976138F12696568B00AC8376 /* QuestionViewController.swift */,
+				976138F4269656AA00AC8376 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,13 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				973028A22694FF5E00617C68 /* ViewController.swift in Sources */,
+				973028A22694FF5E00617C68 /* IntroViewController.swift in Sources */,
 				973028B726950A9000617C68 /* Questions.swift in Sources */,
 				9730289E2694FF5E00617C68 /* AppDelegate.swift in Sources */,
 				973028C526950CF800617C68 /* Answer.swift in Sources */,
 				973028A02694FF5E00617C68 /* SceneDelegate.swift in Sources */,
 				973028C126950C7200617C68 /* ResponseType.swift in Sources */,
+				976138F22696568B00AC8376 /* QuestionViewController.swift in Sources */,
 				973028C826950D7100617C68 /* AnimalType.swift in Sources */,
+				976138F5269656AA00AC8376 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3U43FT35S;
-				INFOPLIST_FILE = "Test Quiz/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Test Quiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,7 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3U43FT35S;
-				INFOPLIST_FILE = "Test Quiz/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Test Quiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

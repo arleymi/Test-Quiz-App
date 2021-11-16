@@ -25,7 +25,7 @@ extension Question {
                 ]
                ),
             Question(
-                text: "What do you like more",
+                text: "What do you like more?",
                 type: .single,
                 answers: [
                      Answer(text: "To swim", type: .dog),
@@ -39,7 +39,7 @@ extension Question {
                 type: .single,
                 answers: [
                      Answer(text: "I hate it", type: .dog),
-                     Answer(text: "I am annoyed f it ", type: .cat),
+                     Answer(text: "I am annoyed of it ", type: .cat),
                      Answer(text: "I don't care", type: .rabbit),
                      Answer(text: "I love it", type: .rabbit)
                     ]
